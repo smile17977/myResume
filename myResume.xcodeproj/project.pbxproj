@@ -13,6 +13,8 @@
 		E75D404C2483BC1F00622AFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E75D404A2483BC1F00622AFD /* Main.storyboard */; };
 		E75D404E2483BC2100622AFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E75D404D2483BC2100622AFD /* Assets.xcassets */; };
 		E75D40512483BC2100622AFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E75D404F2483BC2100622AFD /* LaunchScreen.storyboard */; };
+		E75D405E2483CD3300622AFD /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D405D2483CD3300622AFD /* Contacts.swift */; };
+		E75D40602483F52300622AFD /* HelloUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D405F2483F52300622AFD /* HelloUserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E75D404D2483BC2100622AFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E75D40502483BC2100622AFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E75D40522483BC2100622AFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E75D405D2483CD3300622AFD /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
+		E75D405F2483F52300622AFD /* HelloUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloUserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,57 @@
 		E75D40432483BC1F00622AFD /* myResume */ = {
 			isa = PBXGroup;
 			children = (
-				E75D40442483BC1F00622AFD /* AppDelegate.swift */,
-				E75D40462483BC1F00622AFD /* SceneDelegate.swift */,
-				E75D40482483BC1F00622AFD /* ViewController.swift */,
-				E75D404A2483BC1F00622AFD /* Main.storyboard */,
-				E75D404D2483BC2100622AFD /* Assets.xcassets */,
-				E75D404F2483BC2100622AFD /* LaunchScreen.storyboard */,
-				E75D40522483BC2100622AFD /* Info.plist */,
+				E75D40582483BDFB00622AFD /* ViewControllers */,
+				E75D40592483BE2B00622AFD /* Storyboards */,
+				E75D405C2483C93D00622AFD /* Models */,
+				E75D405A2483BE9600622AFD /* SupportingFiles */,
+				E75D405B2483BEF100622AFD /* Sources */,
 			);
 			path = myResume;
+			sourceTree = "<group>";
+		};
+		E75D40582483BDFB00622AFD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E75D40482483BC1F00622AFD /* ViewController.swift */,
+				E75D405F2483F52300622AFD /* HelloUserViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E75D40592483BE2B00622AFD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E75D404A2483BC1F00622AFD /* Main.storyboard */,
+				E75D404F2483BC2100622AFD /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E75D405A2483BE9600622AFD /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E75D40442483BC1F00622AFD /* AppDelegate.swift */,
+				E75D40462483BC1F00622AFD /* SceneDelegate.swift */,
+				E75D40522483BC2100622AFD /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		E75D405B2483BEF100622AFD /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E75D404D2483BC2100622AFD /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E75D405C2483C93D00622AFD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E75D405D2483CD3300622AFD /* Contacts.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +184,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E75D40602483F52300622AFD /* HelloUserViewController.swift in Sources */,
+				E75D405E2483CD3300622AFD /* Contacts.swift in Sources */,
 				E75D40492483BC1F00622AFD /* ViewController.swift in Sources */,
 				E75D40452483BC1F00622AFD /* AppDelegate.swift in Sources */,
 				E75D40472483BC1F00622AFD /* SceneDelegate.swift in Sources */,
@@ -286,7 +334,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VH9RU7S6TL;
-				INFOPLIST_FILE = myResume/Info.plist;
+				INFOPLIST_FILE = myResume/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VH9RU7S6TL;
-				INFOPLIST_FILE = myResume/Info.plist;
+				INFOPLIST_FILE = myResume/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
